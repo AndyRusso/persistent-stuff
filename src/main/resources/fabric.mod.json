@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "persistent-toggle-sprint",
+  "version": "${version}",
+
+  "name": "Persistent Toggle Sprint",
+  "description": "Saves your toggle sprint state (sprinting/walking) across Minecraft restarts! Never toggle sprint at startup again.",
+  "authors": [
+    "Andy Russo"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/persistent-toggle-sprint",
+    "sources": "https://github.com/AndyRusso/persistent-toggle-sprint",
+    "issues": "https://github.com/AndyRusso/persistent-toggle-sprint/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/persistent-toggle-sprint/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.andyrusso.persistent_toggle_sprint.PersistentToggleSprint"
+    ]
+  },
+
+  "mixins": [
+    "persistent-toggle-sprint.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": ">=0.55.2",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}
