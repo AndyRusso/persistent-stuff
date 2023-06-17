@@ -1,0 +1,7 @@
+{
+  "persistentstuff.title": "Persistent Stuff config menu",
+  "persistentstuff.enabled": "Enable the mod",
+  "persistentstuff.sprinting": "Save sprinting state",
+  "persistentstuff.hitboxes": "Save hitboxes' state",
+  "persistentstuff.chunkBorders": "Save chunk borders' state"
+}
