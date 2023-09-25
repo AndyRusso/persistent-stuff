@@ -13,15 +13,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinMinecraftClient {
     @Inject(method = "<init>", at = @At("TAIL"))
     private void init(RunArgs args, CallbackInfo ci) {
-        Config config = Config.getInstance();
         // Don't do anything if the whole mod is disabled
-        if (!config.enabled) return;
+        if (!Config.enabled) return;
 
         MinecraftClient client = MinecraftClient.getInstance();
         GameOptions options = client.options;
 
-        options.sprintKey.setPressed(config.sprinting && config.sprintingEnabled);
-        client.getEntityRenderDispatcher().setRenderHitboxes(config.hitboxes && config.hitboxesEnabled);
-        if (config.chunkBorders && config.chunkBordersEnabled) client.debugRenderer.toggleShowChunkBorder();
+        options.sprintKey.setPressed(Config.sprinting && Config.sprintingEnabled);
+        client.getEntityRenderDispatcher().setRenderHitboxes(Config.hitboxes && Config.hitboxesEnabled);
+        if (Config.chunkBorders && Config.chunkBordersEnabled) client.debugRenderer.toggleShowChunkBorder();
     }
 }

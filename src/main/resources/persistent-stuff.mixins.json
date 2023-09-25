@@ -4,6 +4,7 @@
   "package": "io.github.andyrusso.persistentstuff.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "MixinClientPlayerEntity",
     "MixinMinecraftClient"
   ],
   "injectors": {
