@@ -1,7 +1,8 @@
 {
-  "persistentstuff.title": "Persistent Stuff config menu",
-  "persistentstuff.enabled": "Enable the mod",
-  "persistentstuff.sprinting": "Save sprinting state",
-  "persistentstuff.hitboxes": "Save hitboxes' state",
-  "persistentstuff.chunkBorders": "Save chunk borders' state"
+  "persistent-stuff.midnightconfig.title": "Persistent Stuff config menu",
+  "persistent-stuff.midnightconfig.enabled": "Enable the mod",
+  "persistent-stuff.midnightconfig.sprintingEnabled": "Save sprinting state",
+  "persistent-stuff.midnightconfig.hitboxesEnabled": "Save hitboxes' state",
+  "persistent-stuff.midnightconfig.chunkBordersEnabled": "Save chunk borders' state",
+  "persistent-stuff.midnightconfig.afterDeath": "Keep sprint/sneak toggled on respawns"
 }
